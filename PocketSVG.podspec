@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/pocketsvg/PocketSVG"
   s.authors      = { "Ponderwell, Fjölnir Ásgeirsson, Ariel Elkin, and Contributors" => "https://github.com/pocketsvg/PocketSVG" }
   s.ios.deployment_target = '8.1'
+  s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
   s.license = {
     :type => 'MIT',
@@ -19,5 +20,6 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   s.source_files = 'PocketSVG.{h,mm}', 'SVGBezierPath.{h,mm}', 'SVGEngine.{h,mm}', 'SVGImageView.{h,m}', 'SVGLayer.{h,m}', 'SVGPortability.h', 'SVGColors.plist'
   s.ios.source_files = 'SVGImageView_iOS.h'
+  s.tvos.source_files = 'SVGImageView_iOS.h'
   s.osx.source_files = 'SVGImageView_Mac.h'
 end
